@@ -1,0 +1,149 @@
+#container {
+    padding-top: 7em;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+body {
+    background-color: pink;
+}
+
+h1 {
+    margin: 2em;
+    font-family: look script, sans-serif;
+    color: #3a5ba7;
+    padding-left: 15em;
+}
+
+#animateGif {
+    padding-top: 7em;
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 30em;
+    z-index: 2;
+}
+
+#animation video {
+    padding-top: 7em;
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 30em;
+    z-index: 1;
+    padding-left: 25em;
+}
+
+#buttons {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30em;
+    /*flex-direction: column;*/
+    bottom: 6em;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#buttons a {
+    border-radius: 0.5em;
+    margin: 2em;
+    color: white;
+    font-family: Arial;
+}
+
+#buttons a img {
+    max-width: 5em;
+    max-height: 5em;
+    border-radius: 50px;
+}
+
+.testpreview {
+    z-index: 10;
+    position: absolute;
+}
+
+.testpreview:hover {
+    opacity: 0;
+    /*display: none;*/
+    transition: all .2s ease-in-out;
+}
+
+#buttons a:hover {
+    transition: all .2s ease-in-out;
+    box-shadow: 4px 4px 16px -5px rgba(0, 0, 0, 0.75);
+    transform: scale(1.1);
+    background-color: white;
+}
+
+.active {
+    transition: all .2s ease-in-out;
+    box-shadow: 4px 4px 16px -5px rgba(0, 0, 0, 0.75);
+    transform: scale(1.1);
+    background-color: white;
+}
+
+.color1 {
+    transition: all .5s ease-in-out;
+    /*background-color: #ffa875;*/
+    background-color: #f7dcde;
+}
+
+.color2 {
+    transition: all .5s ease-in-out;
+    background-color: #fad4d6;
+}
+
+.color3 {
+    transition: all .5s ease-in-out;
+    background-color: #fad4d6;
+}
+
+.hidden {
+    /*display: none;*/
+    opacity: 0;
+}
+
+.visible {
+    /*display: flex;*/
+    opacity: 100;
+}
+
+/**
+.transition {
+    opacity: 100;
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+**/
+
+/*.fade-in {
+    animation: fadeIn 1s;
+}*/
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-out {
+    animation: fadeOut 1s;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

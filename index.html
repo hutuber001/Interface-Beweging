@@ -1,0 +1,82 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="color1">
+
+    <h1>Make your own polaroid!</h1>
+    <div id="container">
+        <div id="animation">
+
+           <!-- intro idle state -->
+            <video id="animateGif" class="fade-in" >
+        <source src="img/Intro.mp4" type="video/mp4" />
+</video>
+
+
+<!--
+             <video id="transition" class="transition" style="opacity: 0" muted>
+        <source src="./img/transition1.mp4" type="video/mp4" />
+      </video>
+            <video id="animateGif" class="fade-in" autoplay loop muted>
+        <source src="./img/intro.mp4" type="video/mp4" />
+</video>
+        -->
+
+            <!--Functie 1-->
+
+            <video id="video" >
+        <source src="./img/anim1.mp4" type="video/mp4" />
+      </video>
+
+            <!--Functie 2
+<video id="video" >
+        <source src="./img/anim2.mp4" type="video/mp4" />
+      </video>
+
+           -->
+            <!--Functie 3
+
+            <video id="video" >
+        <source src="./img/anim3.mp4" type="video/mp4" />
+      </video>
+        -->
+
+        </div>
+
+        <!--Knoppen-->
+        <div id="buttons">
+
+            <!--knop 1-->
+            <a id="button1">
+                <img class="testButton" src="./img/button1.gif">
+            </a>
+
+            <!--knop 2-->
+            <a id="button2">
+                <img class="testButton" src="./img/button2.gif">
+            </a>
+
+            <!--knop 3-->
+            <a id="button3">
+                <img class="testButton" src="./img/button3.gif">
+            </a>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

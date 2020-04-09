@@ -2,7 +2,8 @@
     padding-top: 7em;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    width: 100%;
+    justify-content: center;
 }
 
 body {
@@ -13,16 +14,22 @@ h1 {
     margin: 2em;
     font-family: look script, sans-serif;
     color: #3a5ba7;
-    padding-left: 15em;
+    display: flex;
+   justify-content: center;
+    padding-bottom: 11px;
+    border-bottom: 2px solid #3a5ba7;
 }
+
 
 #animateGif {
     padding-top: 7em;
     left: 0;
     top: 0;
     position: fixed;
-    width: 30em;
+    margin: auto;
     z-index: 2;
+    display: flex;
+    justify-content: center;
 }
 
 #animation video {
@@ -30,16 +37,18 @@ h1 {
     left: 0;
     top: 0;
     position: fixed;
-    width: 30em;
+    width: 40em;
     z-index: 1;
     padding-left: 25em;
+    display: flex;
+    justify-content: center;
 }
 
 #buttons {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    padding-left: 30em;
+    padding-left: 31em;
     /*flex-direction: column;*/
     bottom: 6em;
     transition: all .2s ease-in-out;
